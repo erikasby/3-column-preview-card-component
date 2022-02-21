@@ -66,6 +66,13 @@ body {
   text-decoration: none;
   padding: 1.5rem 3.5rem;
   border-radius: 99px;
+  transition: all 0.2s;
+}
+
+.card__button:hover {
+  background-color: transparent;
+  box-shadow: 0 0 0 2px var(--very-light-gray);
+  color: var(--very-light-gray);
 }
 
 /* Sedans */
