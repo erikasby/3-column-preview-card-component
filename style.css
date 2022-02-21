@@ -19,3 +19,97 @@ html {
   font-size: 62.5%;
   font-family: "Lexend Deca", sans-serif;
 }
+
+body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+/* Card */
+.cards {
+  max-width: 50rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem;
+}
+
+.card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.card__title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--very-light-gray);
+}
+
+.card__description {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: var(--transparent-white);
+}
+
+.card__button {
+  width: max-content;
+  text-decoration: none;
+  padding: 1.5rem 3.5rem;
+  border-radius: 99px;
+}
+
+/* Sedans */
+.card--sedans {
+  background-color: var(--bright-orange);
+}
+
+.card__button--sedans {
+  color: var(--bright-orange);
+  background-color: var(--very-light-gray);
+}
+
+/* SUVs */
+.card--suvs {
+  background-color: var(--dark-cyan);
+}
+
+.card__button--suvs {
+  color: var(--dark-cyan);
+  background-color: var(--very-light-gray);
+}
+
+/* Luxury */
+.card--luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.card__button--luxury {
+  color: var(--very-dark-cyan);
+  background-color: var(--very-light-gray);
+}
+
+/* Media */
+@media (min-width: 900px) {
+  .cards {
+    display: grid;
+    max-width: 120rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    max-width: 40rem;
+    gap: 10rem;
+    justify-content: space-between;
+  }
+}
