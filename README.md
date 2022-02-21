@@ -39,4 +39,5 @@ Users should be able to:
 
 ## Author
 
+- Frontend Mentor - [erikasby](https://www.frontendmentor.io/profile/erikasby)
 - Twitter - [@ericrgb](https://www.twitter.com/ericrgb)
